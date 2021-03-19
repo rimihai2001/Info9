@@ -1,0 +1,36 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<TITLE>Lecția 6</TITLE></HEAD>
+<BODY BGCOLOR="black">
+<CENTER><A HREF="index.html"><img src="Logo.png" alt="Info 9"></CENTER></A>
+<CENTER><A HREF="lectia5.html"><FONT COLOR="lightgreen" SIZE="2">Lecția Anterioară</FONT></A></CENTER>
+<CENTER><A HREF="lectia7.html"><FONT COLOR="lightgreen" SIZE="2">Lecția Urmatoare</FONT></A></CENTER>
+<BR><BR><BR>
+<CENTER><U><FONT COLOR="lightgreen" SIZE="5">Lecția 6: Fișiere de Intrare</FONT></A></U></CENTER>
+<BR><BR>
+<FONT COLOR="lightgreen" SIZE="5">
+    O altă modalitate de citire a datelor este din fișier.<BR>
+	Pentru a utiliza această opțiune trebuie adăugată biblioteca fstream. Astfel, pe primul rând al codului se va insera următoarea comandă: #include < fstream > <BR>
+	De asemenea, pentru a accesa fișierul, trebuie adăugată și comanda: ifstream declarare_fisier("nume_fisier.extensie"); <BR>
+	Pentru a citi din fișier, se folosește aceeași structură ca la citirea din consolă, dar cin se va înlocui cu variabila declarare_fisier ce este aleasă în comanda anterioară.<BR> 
+	După ce datele au fost citite, fișierul se va închide cu comanda declarare_fisier.close(), unde declarare_fisier este variabila declarată anterior. 
+	<BR><BR>
+
+	OBSERVAȚIE: În cazul în care nu știm câte date sunt în fișier, se pot folosi comenzile while(!f.eof()) sau while(declarare_fisier >> x);
+</FONT>
+
+<BR><BR><BR><BR>
+
+</div>
+   <div class="footer">
+   <CENTER>
+   <FONT COLOR="lightgreen">
+   <p style="font-size:10; float:center;">Realizat de Mihai Radu-Ioan pentru concursul InfoEducație 2020</p>
+      <p style="font-size:10; float:center;">Profesor coordonator: Carmen Mincă</p>
+	     <p style="font-size:10; float:center;">Colegiul Național de Informatică "Tudor Vianu"</p>
+   </div>
+   </FONT>
+   </CENTER>
+</BODY>
+</HTML>

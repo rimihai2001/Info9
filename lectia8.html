@@ -1,0 +1,123 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<TITLE>Lecția 8</TITLE></HEAD>
+<BODY BGCOLOR="black">
+<CENTER><A HREF="index.html"><img src="Logo.png" alt="Info 9"></CENTER></A>
+<CENTER><A HREF="lectia7.html"><FONT COLOR="lightgreen" SIZE="2">Lecția Anterioară</FONT></A></CENTER>
+<CENTER><A HREF="lectia9.html"><FONT COLOR="lightgreen" SIZE="2">Lecția Urmatoare</FONT></A></CENTER>
+<BR><BR><BR>
+<CENTER><U><FONT COLOR="lightgreen" SIZE="5">Lecția 8: Probleme Rezolvate</FONT></A></U></CENTER>
+<BR><BR>
+<FONT COLOR="lightgreen" SIZE="5">
+   1. Se citesc două numere de la tastatură. Se cere afișarea diferenței dintre succesorul primului număr și predecesorul celui de-al doilea.<BR>
+   <BR>
+#include < iostream > <BR>
+
+using namespace std; <BR>
+
+int main()<BR>
+{<BR>
+    int a, b;<BR>
+    cin>>a;<BR>
+    cin>>b;<BR>
+    cout<<(a + 1) – ( b – 1);<BR>
+    return 0;<BR>
+}<BR>
+<BR><BR><BR>
+2. Se citesc 3 numere. Afisați fiecare numar pe câte o linie. <BR>
+<BR>
+#include < iostream ><BR>
+
+using namespace std;<BR>
+
+int main()<BR>
+{<BR>
+    int a, b, c;<BR>
+    cin>>a;<BR>
+    cin>>b>>c;<BR>
+    cout<< a << endl << b << endl << c;<BR>
+    return 0;<BR>
+}<BR>
+<BR><BR><BR>
+3. Se citesc numere naturale nenule până la întâlnirea primului număr egal cu zero. Să se afișeze numărul de numere naturale citit. <BR>
+<BR>
+#include < iostream > <BR>
+
+using namespace std;<BR>
+
+int main()<BR>
+{<BR>
+    int nr, k=0;<BR>
+    cin>>nr;<BR>
+    while ( nr > 0 )<BR>
+    {<BR>
+        k++;<BR>
+        cin>>nr;<BR>
+    }<BR>
+    cout<<"numere citite="<< k;<BR>
+    return 0;<BR>
+}<BR>
+<BR><BR><BR>
+4. Se citește un număr natural. Să se afișeze răsturnatul numărului. <BR>
+<BR>
+#include < iostream > <BR>
+
+using namespace std;<BR>
+
+int main()<BR>
+{<BR>
+    int nr, r=0;<BR>
+    cin>>nr;<BR>
+    while ( nr > 0) <BR>
+    {<BR>
+        r=r*10 + nr % 10;<BR>
+        nr= nr / 10;<BR>
+    }<BR>
+    cout<<"rasturnat="<< r;<BR>
+    return 0;<BR>
+}<BR>
+<BR><BR><BR>
+5. Să se afișeze valorile naturale cuprinse în intervalul închis de la a la b, unde a și b sunt citite de la tastatură. <BR>
+<BR>
+#include < iostream ><BR>
+
+using namespace std;<BR>
+
+int main()<BR>
+{<BR>
+    int a, b;<BR>
+    cin>>a>>b;<BR>
+    for (int i=a; i<=b; i=i+1)<BR>
+        cout<< i<<" ";<BR>
+    return 0;<BR>
+}<BR>
+<BR><BR><BR>
+6. Să se afișeze numerele naturale formate din exact două cifre.<BR>
+<BR>
+#include <iostream><BR>
+
+using namespace std;<BR>
+
+int main()<BR>
+{<BR>
+     for (int i=10; i<=99; i++)<BR>
+      cout<< i <<" ";<BR>
+    return 0;<BR>
+}<BR>
+<BR><BR><BR>
+
+
+</div>
+   <div class="footer">
+   <CENTER>
+   <FONT COLOR="lightgreen">
+   <p style="font-size:10; float:center;">Realizat de Mihai Radu-Ioan pentru concursul InfoEducație 2020</p>
+      <p style="font-size:10; float:center;">Profesor coordonator: Carmen Mincă</p>
+	     <p style="font-size:10; float:center;">Colegiul Național de Informatică "Tudor Vianu"</p>
+   </div>
+   </FONT>
+   </CENTER>
+</FONT>
+</BODY>
+</HTML>
